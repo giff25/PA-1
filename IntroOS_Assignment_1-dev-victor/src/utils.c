@@ -13,6 +13,7 @@ void partition_file_data(char *input_file, int n, char *blocks_folder) {
         perror("Error opening input file"); //error statement
         exit(1);   //exit
     }
+//check
 
     fseek(input_file_ptr, 0, SEEK_END); //fseek moves file pointer of a given file to specific position
     int file_size = ftell(input_file_ptr); //ftell finds position of file pointer in respect to start of file
